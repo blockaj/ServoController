@@ -1,0 +1,33 @@
+h1
+{
+	text-align: center;
+}
+
+div#underH1
+{
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p
+{
+	display: inline-block;
+}
+
+p#usersOnline
+{
+	padding-left: 5px;
+}
+
+div#controls
+{
+	width: 217px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p#error
+{
+	color: red;
+}

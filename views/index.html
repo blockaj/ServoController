@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="clientStylesheet.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="socket.io/socket.io.js"></script>
+		<script src="clientScript.js"></script>
+	</head>
+	<body>
+		<h1>Arduino Controller</h1>
+		<div id="underH1"><p>Users online:<p id="usersOnline"></p></p></div>
+		<div id="controls">
+			<input type="text" id="servoField" onkeydown="getKeyCode()"> <button class="btn btn-primary" onclick="sendToServer()">Send</button>
+			<p id="error"></p>
+		</div>
+	</body>
+</html>
