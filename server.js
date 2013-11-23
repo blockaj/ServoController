@@ -21,5 +21,8 @@ io.sockets.on("connection", function(socket){
 	});
 	socket.on("messageForServer", function(message){
 		console.log(message.servoMessage);
+		serialPort.open(function(){
+			serialPort.write(new Buffer([message.servoMessage]));
+		});
 	});
 });
